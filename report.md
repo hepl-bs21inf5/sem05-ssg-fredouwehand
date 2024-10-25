@@ -8,7 +8,7 @@ Frédéric Ouwehand
 | ------------------------------- | -------------- | ---------- | ---- |
 | Setup workspace                 | 15             | 10         | done |
 | Read instructions               | 30             | 20         | done |
-| Create basic template           | 15             |            |      |
+| Create basic template           | 15             | 20         | done |
 | Generate web pages              | 30             |            |      |
 | Auto deploy with GitHub action  | 45             |            |      |
 | Adapt page styles               | 30             |            |      |
