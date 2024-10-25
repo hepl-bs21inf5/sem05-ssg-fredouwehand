@@ -10,7 +10,7 @@
 | Read instructions               | 30             | 20         | done |
 | Create basic template           | 15             | 20         | done |
 | Generate web pages              | 30             | 15         | done |
-| Auto deploy with GitHub action  | 45             |            |      |
+| Auto deploy with GitHub action  | 45             | 25         | done |
 | Adapt page styles               | 30             |            |      |
 | Add an image to the adventure   | 45             |            |      |
 | Add personalized CSS stylesheet | 20             |            |      |
