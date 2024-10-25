@@ -1,6 +1,6 @@
 # Générateur de site statique
 
-Frédéric Ouwehand
+[Lien vers le site web](https://hepl-bs21inf5.github.io/sem05-ssg-fredouwehand/)
 
 ## Planning
 
