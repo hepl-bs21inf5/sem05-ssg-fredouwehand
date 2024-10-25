@@ -10,10 +10,22 @@ eleventyComputed:
   title: "{{ aventure.name }}"
 ---
 
-<h1>{{ aventure.name }}</h1>
-<p>{{ aventure.description }}</p>
-<ul>
-  {% for option in aventure.options %}
-  <li><a href="../{{ option.next }}/">{{ option.text }}</a></li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ aventure.name }}</h5>
+          <p>{{ aventure.description }}</p>
+          <div class="btn-group" role="group" aria-label="Possibilités">
+            {% for option in aventure.options %}
+            <a href="../{{ option.next }}/" class="btn btn-outline-primary"
+              >{{ option.text }}</a
+            >
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

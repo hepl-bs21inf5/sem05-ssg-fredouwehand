@@ -11,7 +11,7 @@
 | Create basic template           | 15             | 20         | done |
 | Generate web pages              | 30             | 15         | done |
 | Auto deploy with GitHub action  | 45             | 25         | done |
-| Adapt page styles               | 30             |            |      |
+| Adapt page styles               | 30             | 30         | done |
 | Add an image to the adventure   | 45             |            |      |
 | Add personalized CSS stylesheet | 20             |            |      |
 | Total                           | 3h50           |            |      |
