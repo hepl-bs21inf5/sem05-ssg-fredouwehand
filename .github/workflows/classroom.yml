@@ -1,0 +1,43 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: report.md
+      id: report-md
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: report.md
+        setup-command: ''
+        command: tree -fi
+        input: ''
+        expected-output: "./report.md"
+        comparison-method: contains
+        timeout: 1
+        max-score: 1
+    - name: npm
+      id: npm
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: npm
+        setup-command: npm install
+        command: npm run build
+        timeout: 1
+        max-score: 1
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        REPORT-MD_RESULTS: "${{steps.report-md.outputs.result}}"
+        NPM_RESULTS: "${{steps.npm.outputs.result}}"
+      with:
+        runners: report-md,npm
