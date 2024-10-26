@@ -3,6 +3,7 @@
     "id": "rangement",
     "name": "Rangement",
     "description": "Vous décidez de faire du rangement dans votre maison. Par où commencer ?",
+    "image": "messy-room.png",
     "options": [
       {
         "text": "Cave",
@@ -48,6 +49,7 @@
     "id": "tresor",
     "name": "Trésor",
     "description": "Vous trouvez un trésor !",
+    "image": "treasure.png",
     "options": [
       {
         "text": "Recommencer",
