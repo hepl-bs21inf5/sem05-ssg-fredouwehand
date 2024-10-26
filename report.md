@@ -13,5 +13,5 @@
 | Auto deploy with GitHub action  | 45             | 70         | done |
 | Adapt page styles               | 30             | 30         | done |
 | Add an image to the adventure   | 45             | 30         | done |
-| Add personalized CSS stylesheet | 20             |            |      |
-| Total                           | 3h50           |            |      |
+| Add personalized CSS stylesheet | 20             | 30         | done |
+| Total                           | 3h50           | 3h45       | done |
