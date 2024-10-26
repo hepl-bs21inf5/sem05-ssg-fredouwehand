@@ -12,6 +12,6 @@
 | Generate web pages              | 30             | 15         | done |
 | Auto deploy with GitHub action  | 45             | 25         | done |
 | Adapt page styles               | 30             | 30         | done |
-| Add an image to the adventure   | 45             |            |      |
+| Add an image to the adventure   | 45             | 30         | done |
 | Add personalized CSS stylesheet | 20             |            |      |
 | Total                           | 3h50           |            |      |
