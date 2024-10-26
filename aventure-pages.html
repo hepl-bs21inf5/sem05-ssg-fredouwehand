@@ -1,0 +1,45 @@
+---
+pagination:
+  data: aventure
+  size: 1
+  alias: aventure
+permalink: "aventure/{{ aventure.id }}/"
+
+layout: base.njk
+eleventyComputed:
+  title: "{{ aventure.name }}"
+---
+
+<div class="container">
+  <div class="card mt-3">
+    <div class="card-body">
+      <div class="row mb-3">
+        <div class="col">
+          <h5 class="card-title">{{ aventure.name }}</h5>
+          <p>{{ aventure.description }}</p>
+          <div class="btn-group" role="group" aria-label="Possibilités">
+            {% for option in aventure.options %}
+            <a
+              href="/aventure/{{ option.next }}/"
+              class="btn btn-outline-primary"
+              >{{ option.text }}</a
+            >
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% if aventure.image %}
+      <div class="row">
+        <div class="col">
+          <img
+            src="/images/{{ aventure.image }}"
+            alt="{{ aventure.name }}"
+            class="rounded mx-auto d-block"
+            style="width: 300px; max-width: 100%"
+          />
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
